@@ -28,3 +28,16 @@ if __name__ == "__main__":
     for key, value in dic1.items():
         print(key, value)
     print("")
+
+    # dictionary deletation
+    print(dic1)
+    del dic1["username"]
+    print(dic1)
+    # 选定要弹出的键值
+    print(dic1.pop("passwd"))
+    # 弹出最后的条目
+    print(dic1.popitem())
+    print(dic1)
+    # 清空字典
+    dic1.clear()
+    print(dic1)
